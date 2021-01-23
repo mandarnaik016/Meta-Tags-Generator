@@ -1,0 +1,57 @@
+<form>
+  <div class="form-group">
+    <label>TITLE</label>
+    <input type="text" class="form-control" id="title" placeholder="e.g Meta Tags Generator" />
+  </div>
+  <div class="form-group">
+    <label>DESCRIPTION</label>
+    <input type="text" class="form-control" id="description" placeholder="e.g A Site That Generates Meta Tags In No Time" />
+  </div>
+  <div class="form-group">
+    <label>KEYWORDS</label>
+    <input type="text" class="form-control" id="keywords" placeholder="e.g Keyword1, Keyword2, Keyword3" />
+  </div>
+  <div class="form-group">
+    <label>LANGUAGE</label>
+    <input type="text" class="form-control" id="lang" placeholder="e.g en=English, fr=French" />
+  </div>
+  <div class="form-group">
+    <label>AUTHOR</label>
+    <input type="text" class="form-control" id="author" placeholder="e.g YourName YourSurname" />
+  </div>
+  <div class="form-group">
+    <label>WEBSITE URL</label>
+    <input type="url" class="form-control" id="url" placeholder="e.g https://yourwebsite.com/" />
+  </div>
+  <div class="form-group">
+    <label>IMAGE</label>
+    <input type="url" class="form-control" id="image" placeholder="e.g https://yourwebsite.com/image.png" />
+  </div>
+  <div class="form-check form-check-radio">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="contentType" value="website" checked>
+      WEBSITE
+      <span class="circle">
+        <span class="check"></span>
+      </span>
+    </label>
+  </div>
+  <div class="form-check form-check-radio">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="contentType" value="article">
+      ARTICLE
+      <span class="circle">
+        <span class="check"></span>
+      </span>
+    </label>
+  </div>
+  <button id="submitForm" type="submit" class="btn btn-primary">
+    <i class="fa fa-cog mr-2"></i> GENERATE
+  </button>
+  <div class="form-group">
+    <textarea class="form-control" id="display" rows="10" readonly="readonly"></textarea>
+  </div>
+  <button id="textCopy" type="button" class="btn btn-primary" data-placement="top" title="Copied!" data-container="body">
+    <i class="fa fa-files-o mr-2"></i> COPY
+  </button>
+</form>
